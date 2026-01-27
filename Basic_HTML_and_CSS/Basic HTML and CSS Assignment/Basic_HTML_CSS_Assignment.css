@@ -1,0 +1,16 @@
+li {
+	color: purple;
+}
+h1 {
+	color: blue;
+	text-shadow: 2px 2px 3px black;
+}
+footer {
+	font-size: 24px;
+	text-align: center;
+	color: red;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-shadow: 2px 2px 3px darkred;
+}

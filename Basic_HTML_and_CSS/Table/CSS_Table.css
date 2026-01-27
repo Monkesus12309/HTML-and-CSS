@@ -1,0 +1,21 @@
+table {
+	border: 1px darkgray;
+}
+
+td:hover {
+	background-color:gray;
+	color: white;
+}
+tr, th {
+	background-color: black;
+	color: white;
+}
+
+tr, td {
+	background-color: lightgray;
+	color: black;
+}
+h1 {
+	background-color: red;
+	color:white;
+}
