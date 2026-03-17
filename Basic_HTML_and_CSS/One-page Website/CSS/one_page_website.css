@@ -1,0 +1,16 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+}
+
+#login {
+    position: relative;
+    text-align: center;
+}
+
+input {
+    width: 150px;
+    text-align: center;
+    margin-right: 10px;
+    border: 2px solid black;
+}
