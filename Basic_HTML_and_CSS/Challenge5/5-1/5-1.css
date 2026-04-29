@@ -1,0 +1,24 @@
+body {
+    display: block;
+    margin: auto;
+    filter: contrast(200%);
+}
+
+img {
+    border-radius: 200%;
+    width: 37.15%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  width: 25%;
+  margin: auto;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 200%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 2s ease;
+  background-color: rgb(230, 82, 82);
+  border-radius: 200%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

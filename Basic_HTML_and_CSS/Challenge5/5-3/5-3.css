@@ -1,0 +1,13 @@
+table {
+    border-color: black;
+    border-radius: 5px;
+    border-style: dotted;
+}
+
+th {
+    padding: 1.25em;
+}
+
+.top {
+    background-color: gray;
+}
