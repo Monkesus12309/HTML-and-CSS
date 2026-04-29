@@ -1,2 +1,7 @@
 # Basic_HTML_and_CSS
-HTML and CSS websites i made using HTML and CSS.
+
+# Space Station Site
+this page is an example home page for a Space travel company. It's styled using CSS and contains a navbar, image containers, and a form.
+
+# Movie Theater Site
+This page is an example home page for Movie theaters that is styled using Bootstrap 4. It contains many Boostrap components including but not limited to a navbar, jumbotron, form, cards, and dropdown.
