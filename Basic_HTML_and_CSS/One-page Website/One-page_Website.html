@@ -2,6 +2,7 @@
 	<html>
 		<title id="home">Very important website</title>
 		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<script src="./One-Page_Website.js"></script>
 		
 		<h1>Cats and Dogs Gallery</h1>
 		
@@ -21,62 +22,102 @@
 		<!--Website Description-->
 		<p>This website is all about cat and dog videos and images!</p>
 		<p>I have scoured the internet to find the cutest media on the world wide web.</p>
+
+		<!--Dogs-->
 		</div>
-		
+			<!-- Images used to open the lightbox -->
+			<div class="row">
+			<div class="column">
+				<img src="./Media/Images/Dog/dog_1.png" onclick="openModal();currentSlide(1)" height="400px" width="400px" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Media/Images/Dog/dog_2.png" onclick="openModal();currentSlide(2)" height="400px" width="400px" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Media/Images/Dog/dog_3.png" onclick="openModal();currentSlide(3)" height="400px" width="400px" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Media/Images/Dog/dog_4.png" onclick="openModal();currentSlide(4)" height="400px" width="400px" class="hover-shadow">
+			</div>
+			</div>
+
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="./Media/Images/Dog/dog_1.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="./Media/Images/Dog/dog_2.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="./Media/Images/Dog/dog_3.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="./Media/Images/Dog/dog_4.png" style="width:100%">
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+				<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image controls -->
+				<div class="column">
+				<img class="demo" src="./Media/Images/Dog/dog_1_Small.png" onclick="currentSlide(1)" alt="Two pups!">
+				</div>
+
+				<div class="column">
+				<img class="demo" src="./Media/Images/Dog/dog_2_Small.png" onclick="currentSlide(2)" alt="Very cute dog with blue eyes.">
+				</div>
+
+				<div class="column">
+				<img class="demo" src="./Media/Images/Dog/dog_3_Small.png" onclick="currentSlide(3)" alt="Very happy doggy!">
+				</div>
+
+				<div class="column">
+				<img class="demo" src="./Media/Images/Dog/dog_4_Small.png" onclick="currentSlide(4)" alt="Even happier doggy!">
+				</div>
+			</div>	
+			</div>
+
 			<div>
 				<div>
 					<div>
-					<!--Dog Images-->
-						<h2 id="dog"> Dog images</h2>
-							<img src="./Media/Images/dog_1.png" alt="Two cute dogs sitting in the grass together." width="500px" height="400px">
-							<img src="./Media/Images/dog_2.png" alt="A dog sitting on a porch." width="500px" height="400px">
-							<div>
-							<img src="./Media/Images/dog_3.png" alt="A happy dog looking towards the camera." width="300px" height="400px">
-							<img src="./Media/Images/dog_4.png" alt="A funny dog with a hat smiling at the camera." width="400px" height="400px">
-							</div>
+						<!--Embeded Videos-->
+						<h2 id="videos">Cat and dog videos!</h2>
+							<h3>Dog Video</h3>
+							<iframe width="300" height="500" src="https://www.youtube.com/embed/r6FNtv-ty8k" alt="A cute Dog Video"></iframe>
+							<h3>Cat Video</h3>
+							<iframe width="300" height="500" src="https://www.youtube.com/embed/tSenKvlVmCQ" alt="A cute Cat Video"></iframe>
 					</div>
-				</div>
-			</div>
-							
-								<div>
-									<div>
-										<div>
-										<!--Cat Images-->
-											<h2 id="cat">Cat Images</h2>
-												<img src="./Media/Images/cat_1.png" alt="A baby cat strectching and yawning at the same time." width="500px" height="400px">
-												<img src="./Media/Images/cat_2.png" alt="An cute upset cat." width="400px" height="400px">
-												<div>
-												<img src="./Media/Images/cat_3.png" alt="A big boy cat looking awesome." width="350px" height="400px">
-												<img src="./Media/Images/cat_4.png" alt="Cat holding onto the camera." width="550px" height="400px">
-												</div>
-											</div>
-										</div>
-									</div>
-									
+				</div>	
+			</div>			
+					<div>
 						<div>
 							<div>
-								<div>
-									<!--Embeded Videos-->
-									<h2 id="videos">Cat and dog videos!</h2>
-										<h3>Dog Video</h3>
-										<iframe width="300" height="500" src="https://www.youtube.com/embed/r6FNtv-ty8k" alt="A cute Dog Video"></iframe>
-										<h3>Cat Video</h3>
-										<iframe width="300" height="500" src="https://www.youtube.com/embed/tSenKvlVmCQ" alt="A cute Cat Video"></iframe>
-								</div>
-							</div>	
-						</div>			
-								<div>
-									<div>
-										<div>
-										<!--Bottom of the Website-->
-											<footer id="login">
-											<h4>Login for more Cat and Dog Media</h4>
-											<form action="" method="post">
-												<input class="rsvp" type="text" value="Gmail">
-												<input class="rsvp" type="text" value="Password">
-												<input type="submit" value="Submit">
-										</div>
-									</div>
-								</div>
-							</footer>
-						</html>
+							<!--Bottom of the Website-->
+								<footer id="login">
+								<h4>Login for more Cat and Dog Media</h4>
+								<form action="" method="post">
+									<input class="rsvp" type="text" value="Gmail">
+									<input class="rsvp" type="text" value="Password">
+									<input type="submit" value="Submit">
+							</div>
+						</div>
+					</div>
+				</footer>
+			</html>
