@@ -1,0 +1,162 @@
+html {
+    background-color: rgb(8, 8, 8);
+}
+/*Main Container*/
+#main-container {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(8, 8, 8);
+    opacity: 1;
+
+    /*Fade*/
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation: 2s fadeInOpacity;
+}
+
+/*Fade Website*/
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Sub Container*/
+#sub-container {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;    
+}
+
+/*Center things*/
+#main-title, #main-image, .main-text, #git-image {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 25px;
+}
+
+/*Add Space between lines*/ 
+hr {
+  margin: 50px;
+}
+
+/*Round out image*/
+#main-image, #git-image {
+    border-radius: 100px;
+    animation: zoominout;
+}
+/*Hover Image Animation*/
+img:hover, #git-image:hover {
+    transition: transform 1s;
+    transform: scale(1.1);  
+}
+
+/*Git Image*/
+#git-image {
+  width: 20%;
+  height: 20%;
+}
+
+/*Center Text*/
+.main-text, #main-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Title Text*/
+#main-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5vw;
+    color: thistle;
+}
+
+/*Paragraph Text*/
+.main-text, .label-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    color: thistle;
+}
+
+
+
+
+/*Pop=up Form*/
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(22, 22, 22);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

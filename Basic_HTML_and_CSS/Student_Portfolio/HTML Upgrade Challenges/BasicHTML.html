@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tom's Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="./css.css">
+        <script src="./java.js"></script>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="sub-container">
+
+                <h1 id="main-title">Tom's Portfolio</h1>
+                
+                <img id="main-image" class="image" src="./Images/monkey.jpg">
+
+                <hr>
+
+                <strong class="main-text">
+                    <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> My name is Toms Zalais. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                    </p>
+                </strong>
+
+                <hr>
+
+                <p class="main-text">
+                    I have been coding for 7 years already and fell in-love with programming,
+                </p>
+
+                <p class="main-text">
+                    I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s 
+                    Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, a bit of C++ and more. 
+                </p>
+
+                <br>
+
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./images/GitHub.png" alt="GitHub Logo" id="git-image"></a>
+                <p class="main-text">You can view my coding projects on my GitHub profile by clicking the image above.</p>
+
+
+                <!-- A button to open the popup form -->
+                <button class="open-button" onclick="openForm()">Open Form</button>
+
+                <!-- The form -->
+                <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <h1 class="label-text">Login</h1>
+
+                    <label class="label-text" for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label class="label-text" for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label class="label-text" for="phoneNumber">Phone Number</label>
+                    <input id="phoneNum" type="number" placeholder="Enter Phone Number" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+                </div>
+                
+
+            </div>
+        </div>
+    </body>
+</html>
