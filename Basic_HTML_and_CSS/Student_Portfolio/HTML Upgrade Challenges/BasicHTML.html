@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tom's Portfolio Website</title>
+        <title>Toms Zalais</title>
         <link rel="stylesheet" type="text/css" href="./css.css">
         <script src="./java.js"></script>
     </head>
 
-    <body>
+    <body onload="showSlides(1)">
         <div id="main-container">
             <div id="sub-container">
 
+                <!--Navbar-->
+                <div class="Navbar">
+                    <a class="active" href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#GitHub">GitHub</a>
+                    <a onclick="openForm()" href="#Contact" >Contact</a>
+                </div>
+
+
                 <h1 id="main-title">Tom's Portfolio</h1>
                 
-                <img id="main-image" class="image" src="./Images/monkey.jpg">
+
+                <!-- Slideshow container -->
+                <div id="Home" class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img id="main-image" src="./Images/HTML_CSS_and_JavaScript.jpeg" style="width:50%">
+                    <div class="text">I am a full-stack software developer, <br> trained in: HTML, CSS, JavaScript</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img id="main-image" src="./Images/Python.png" style="width:50%">
+                    <div class="text">The popular programming language Python,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img id="main-image" src="./Images/SQL_and_Database.jpg" style="width:50%">
+                    <div class="text">Back end development, database and SQL.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img id="main-image" src="./Images/Languages.png" style="width:50%">
+                    <div class="text">C#, .NET Framework, ASP.NET, C++ and MVC.</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
 
                 <hr>
 
@@ -32,7 +82,7 @@
 
                 <hr>
 
-                <p class="main-text">
+                <p id="About" class="main-text">
                     I have been coding for 7 years already and fell in-love with programming,
                 </p>
 
@@ -43,7 +93,7 @@
 
                 <br>
 
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./images/GitHub.png" alt="GitHub Logo" id="git-image"></a>
+                <a id="GitHub" href="https://github.com/Monkesus12309" target="_blank"><img src="./images/GitHub.png" alt="GitHub Logo" id="git-image"></a>
                 <p class="main-text">You can view my coding projects on my GitHub profile by clicking the image above.</p>
 
 
